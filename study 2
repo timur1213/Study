@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+import java.util.List;
+
+class Massive {
+    public static void main(String[] args) {
+        int[] massiveArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+        List<Integer> massiveList = new ArrayList<>();
+        for (int value : massiveArray) {
+            massiveList.add(value);
+        }
+        int sum = 0;
+        for (int value : massiveList) {
+            sum += value;
+        }
+        double average = (double) sum / massiveList.size();
+
+
+        System.out.println("Massive List: " + massiveList);
+        System.out.println("Sum: " + sum);
+        System.out.println("Average: " + average);
+    }
+}
